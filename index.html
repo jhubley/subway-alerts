@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+<style>
+</style>
+<script src="http://d3js.org/d3.v5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"></script>
+
+</head>
+<body>
+<script>
+data = d3.json('data.json')
+  .then((data) => {
+
+  const rowLength = 4,
+  size = 25,
+  marginLeft = 200,
+  marginRight = 200,
+  marginTop = 50,
+  width=500,
+  height=1000
+
+  const scale = d3.scaleLinear()
+    .domain([0, rowLength])
+    .range([0, size * rowLength])
+
+  const viz = d3.select("body")
+  	.append("svg")
+    .attr("id","grid")
+  	.attr("width",width+marginLeft+marginRight)
+  	.attr("height",height+marginTop)
+
+  const annotations = [
+    {
+      note: {
+        label: "A raccoon was on the track"
+      },
+      x: 40,
+      y: 140,
+      dy: 137,
+      dx: 162
+    },
+    {
+      note: {
+        label: "A man tried to set his hat on fire"
+      },
+      x: 10,
+      y: 65,
+      dy: 137,
+      dx: -100
+    }
+  ]
+
+  const makeAnnotations = d3.annotation()
+          .type(d3.annotationLabel)
+          .annotations(annotations)
+
+  const grid = viz.append('g').attr('transform','translate('+marginLeft+','+marginTop+')')
+
+  const slot = grid.selectAll('.square')
+    .data(data)
+    .enter().append("g")
+
+  const cube = slot
+    .append('rect')
+    .attr('x', (d, i) => {
+      const n = i % rowLength
+      return scale(n)
+    })
+    .attr('y', (d, i) => {
+      const n = Math.floor(i / rowLength)
+      return scale(n)
+    })
+    // .attr('width', size)
+    // .attr('height', size)
+    .attr('width', function(d){
+      if(d.group == "A" || d.group=="C"){return size}
+      else{return 0}
+    })
+    .attr('height', function(d){
+      if(d.group == "A" || d.group=="C"){return size}
+      else{return 0}
+    })
+    .attr('fill', function(d){
+      if(d.group=="C"){return '#333'}
+      else if(d.age <= 25){return 'green'}
+      else if(d.age > 25 && d.age <= 40){return 'navy'}
+      else{return 'tomato'}
+    })
+    .attr('stroke','#fff')
+    .attr('stroke-width',1)
+
+
+  const circle = slot
+    .append('circle')
+    .attr('cx', (d, i) => {
+      const n = i % rowLength
+      return scale(n) + size/2
+    })
+    .attr('cy', (d, i) => {
+      const n = Math.floor(i / rowLength)
+      return scale(n) + size/2
+    })
+    .attr('r', function(d){
+      if(d.group == "B"){return size/2}
+      else{return 0}
+    })
+    .attr('fill', function(d){
+      if(d.age <= 25){return 'green'}
+      else if(d.age > 25 && d.age <= 40){return 'navy'}
+      else{return 'tomato'}
+    })
+    .attr('stroke','#fff')
+    .attr('stroke-width',1)
+
+  grid
+    .append("g")
+    .attr("class", "annotation-group")
+    .call(makeAnnotations)
+
+  })
+</script>
+</body>
+</html>
