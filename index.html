@@ -3,23 +3,55 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="utf-8">
 <style>
+body{
+  font-family: Arial,sans-serif;
+}
+h1{
+  font-weight: normal;
+  font-size: 24px;
+  position: absolute;
+  top:10px;
+  left:410px;
+}
+#months{
+  position: absolute;
+  left:320px;
+  top:40px;
+}
+.tooltip {
+  position: absolute;
+  padding: 15px;
+  font: 12px sans-serif;
+  background: #000;
+  color: #ddd;
+  border: 0px;
+  border-radius: 2px;
+  pointer-events: none;
+  opacity: 0.8;
+  visibility: hidden;
+  max-width: 250px;
+}
 </style>
 <script src="http://d3js.org/d3.v5.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"></script>
 
 </head>
 <body>
+  <h1>Subway delays</h1>
+  <div id="months">
+    <p>November</p>
+  </div>
 <script>
-data = d3.json('data.json')
+data = d3.csv('november2019.csv')
   .then((data) => {
 
-  const rowLength = 4,
+  const rowLength = 20,
   size = 25,
-  marginLeft = 200,
+  marginLeft = 400,
   marginRight = 200,
   marginTop = 50,
   width=500,
-  height=1000
+  height=5000
 
   const scale = d3.scaleLinear()
     .domain([0, rowLength])
@@ -36,7 +68,7 @@ data = d3.json('data.json')
       note: {
         label: "A raccoon was on the track"
       },
-      x: 40,
+      x: 440,
       y: 140,
       dy: 137,
       dx: 162
@@ -55,6 +87,9 @@ data = d3.json('data.json')
   const makeAnnotations = d3.annotation()
           .type(d3.annotationLabel)
           .annotations(annotations)
+
+  const trains = ['A','B','C','D','E','F','G','J','L','M','N','Q','R','S','W','Z','1','2','3','4','5','6','7']
+  const colors = ['blue','orange','blue','orange','blue','orange','limegreen','brown','gray','brown','yellow','yellow','yellow','lightgray','yellow','brown','red','red','red','green','green','green','purple']
 
   const grid = viz.append('g').attr('transform','translate('+marginLeft+','+marginTop+')')
 
@@ -75,21 +110,33 @@ data = d3.json('data.json')
     // .attr('width', size)
     // .attr('height', size)
     .attr('width', function(d){
-      if(d.group == "A" || d.group=="C"){return size}
+      if(d.type != "person"){return size}
       else{return 0}
     })
     .attr('height', function(d){
-      if(d.group == "A" || d.group=="C"){return size}
+      if(d.type != "person"){return size}
       else{return 0}
     })
     .attr('fill', function(d){
-      if(d.group=="C"){return '#333'}
-      else if(d.age <= 25){return 'green'}
-      else if(d.age > 25 && d.age <= 40){return 'navy'}
-      else{return 'tomato'}
+      const whichtrain = trains.indexOf(d.train)
+      if(d.type=="other"){return '#333'}
+      else{return colors[whichtrain]}
     })
     .attr('stroke','#fff')
     .attr('stroke-width',1)
+    .on("mouseover", function(d) {
+      var tooltip_str = d.hours + ':' + d.minutes + d.ampm + ', ' + d.train + ' train<br/>' + d.cause + '<br/>' + d.message
+          tooltip.html(tooltip_str)
+              .style("visibility", "visible");
+          console.log('d',d)
+    })
+    .on("mousemove", function(d) {
+      tooltip.style("top", event.pageY - (tooltip.node().clientHeight + 5) + "px")
+          .style("left", event.pageX - (tooltip.node().clientWidth / 2.0) + "px");
+    })
+    .on("mouseout", function(d) {
+      tooltip.style("visibility", "hidden");
+    })
 
 
   const circle = slot
@@ -103,16 +150,32 @@ data = d3.json('data.json')
       return scale(n) + size/2
     })
     .attr('r', function(d){
-      if(d.group == "B"){return size/2}
+      if(d.type == "person"){return size/2}
       else{return 0}
     })
     .attr('fill', function(d){
-      if(d.age <= 25){return 'green'}
-      else if(d.age > 25 && d.age <= 40){return 'navy'}
-      else{return 'tomato'}
+      const whichtrain = trains.indexOf(d.train)
+      if(d.type=="other"){return '#333'}
+      else{return colors[whichtrain]}
     })
     .attr('stroke','#fff')
     .attr('stroke-width',1)
+    .on("mouseover", function(d) {
+      var tooltip_str = d.hours + ':' + d.minutes + d.ampm + '<br/>' + d.cause + '<br/>' + d.message
+          tooltip.html(tooltip_str)
+              .style("visibility", "visible");
+          console.log('d',d)
+    })
+    .on("mousemove", function(d) {
+      tooltip.style("top", event.pageY - (tooltip.node().clientHeight + 5) + "px")
+          .style("left", event.pageX - (tooltip.node().clientWidth / 2.0) + "px");
+    })
+    .on("mouseout", function(d) {
+      tooltip.style("visibility", "hidden");
+    })
+
+    const tooltip = d3.select("body").append("div")
+            .attr("class", "tooltip");
 
   grid
     .append("g")
