@@ -7,6 +7,8 @@ body{
   font-family: Arial,sans-serif;
   margin:0;
   overflow-x: scroll;
+  overflow-y:hidden;
+  height: 100vh;
 }
 body::-webkit-scrollbar {
     width: 1em;
@@ -19,7 +21,10 @@ body::-webkit-scrollbar-thumb {
   background-color: #ffcc51;
   outline: 1px solid slategrey;
 }
-
+#container{
+  height: 100vh;
+  width: 2500px;
+}
 #header{
   background: #000;
   width: 100%;
@@ -73,7 +78,7 @@ h1{
   pointer-events: none;
   opacity: 1;
   visibility: hidden;
-  max-width: 250px;
+  width: 250px;
 }
 path.connector{
   stroke-width:1;
@@ -92,35 +97,45 @@ path.connector-dot{
 </style>
 <script src="http://d3js.org/d3.v5.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
 </head>
 <body>
-  <div id="header">
-    <h1>Subway delays. 2019</h1>
-  </div>
-  <div id="timeline"></div>
-  <ul id="months">
-    <li>December</li>
-    <li>November</li>
-    <li>October</li>
-  </ul>
-  <div id="dropdown">
-    <label class="cause">Filter by cause:</label>
-    <select id="cause_filter">
-    </select>
-  </div>
-  <div id="causedropdown"></div>
-  <div id="delays"></div>
-  <div id="dialog">
-    <div class="dialogbox-1">
-      ah, the subway, the stuff of nightmares. 2019 was no different than usual. it's always a surprise. I dug into the mta's alerts to find the oddest incidents of the year. scroll down to get going.
+  <div id="container">
+    <div id="header">
+      <h1>Subway delays. 2019</h1>
     </div>
-    <div class="dialogbox-2">
+    <div id="timeline"></div>
+    <ul id="months">
+      <li>December</li>
+      <li>November</li>
+      <li>October</li>
+    </ul>
+    <div id="dropdown">
+      <label class="cause">Filter by cause:</label>
+      <select id="cause_filter">
+      </select>
     </div>
-    <div class="dialogbox-3">
+    <div id="causedropdown"></div>
+    <div id="delays"></div>
+    <div id="dialog">
+      <div class="dialogbox-1">
+        ah, the subway, the stuff of nightmares. 2019 was no different than usual. it's always a surprise. I dug into the mta's alerts to find the oddest incidents of the year. scroll down to get going.
+      </div>
+      <div class="dialogbox-2">
+      </div>
+      <div class="dialogbox-3">
+      </div>
     </div>
   </div>
 <script>
+$(document).ready(function() {
+$('html, body, *').mousewheel(function(e, delta) {
+this.scrollLeft -= (delta);
+e.preventDefault();
+});
+});
 data = d3.csv('november.csv')
   .then((data) => {
 
