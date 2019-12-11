@@ -162,37 +162,6 @@ data = d3.csv('november.csv')
   	.attr("width",width+marginLeft+marginRight)
   	.attr("height",height+marginTop)
 
-  // const annotations = [
-  //   {
-  //     note: {
-  //       label: "A raccoon was on the tracks"
-  //     },
-  //     connector: {
-  //       end: "dot",
-  //       // type: "curve",
-  //       // points: [[100, 14],[190, 52]]
-  //     },
-  //     x: 312,
-  //     y: 63,
-  //     dy: 337,
-  //     dx: 300
-  //   }
-  //   // ,
-  //   // {
-  //   //   note: {
-  //   //     label: "A man tried to set his hat on fire"
-  //   //   },
-  //   //   x: 10,
-  //   //   y: 65,
-  //   //   dy: 137,
-  //   //   dx: -100
-  //   // }
-  // ]
-  //
-  // const makeAnnotations = d3.annotation()
-  //         .type(d3.annotationLabel)
-  //         .annotations(annotations)
-
   const trains = ['A','B','C','D','E','F','G','J','L','M','N','Q','R','S','W','Z','1','2','3','4','5','6','7']
   // const oldcolors = ['blue','orange','blue','orange','blue','orange','limegreen','brown','gray','brown','yellow','yellow','yellow','lightgray','yellow','brown','red','red','red','green','green','green','purple']
   const colors = ['#006bf5','#ff6f30','#006bf5','#ff6f30','#006bf5','#ff6f30','#90d050','#994646','#808080','#994646','#ffcc51','#ffcc51','#ffcc51','#bbb','#ffcc51','#994646','#ff252a','#ff252a','#ff252a','#368826','#368826','#368826','#581b7c','#000']
@@ -213,54 +182,6 @@ data = d3.csv('november.csv')
     .data(data)
     .enter().append("g")
     .attr('class','slot')
-
-  // const cube = slot
-  //   .append('rect')
-  //   .attr('x', (d, i) => {
-  //     const n = i % rowLength
-  //     return scale(n)
-  //   })
-  //   .attr('y', (d, i) => {
-  //     const n = Math.floor(i / rowLength)
-  //     return scale(n)
-  //   })
-  //   // .attr('width', size)
-  //   // .attr('height', size)
-  //   .attr('width', function(d){
-  //     if(d.type != "person"){return size}
-  //     else{return 0}
-  //   })
-  //   .attr('height', function(d){
-  //     if(d.type != "person"){return size}
-  //     else{return 0}
-  //   })
-  //   .attr('fill', function(d){
-  //     const whichtrain = trains.indexOf(d.train)
-  //     if(d.type=="other"){return '#333'}
-  //     else{return colors[whichtrain]}
-  //   })
-  //   .attr('opacity',1)
-  //   .attr('stroke','#fff')
-  //   .attr('stroke-width',1)
-  //   .on("mouseover", function(d) {
-  //     let tooltip_str = ''
-  //     if(d.minutes.length == 1){
-  //       tooltip_str = d.date + ', ' + d.hours + ':0' + d.minutes + d.ampm + '<br/>' + d.train + ' train<br/>' + d.cause + '<br/>' + d.message
-  //     }else{
-  //       tooltip_str = d.date + ', ' + d.hours + ':' + d.minutes + d.ampm + '<br/>' + d.train + ' train<br/>' + d.cause + '<br/>' + d.message
-  //     }
-  //         tooltip.html(tooltip_str)
-  //             .style("visibility", "visible");
-  //         console.log('d',d)
-  //   })
-  //   .on("mousemove", function(d) {
-  //     tooltip.style("top", event.pageY - (tooltip.node().clientHeight + 5) + "px")
-  //         .style("left", event.pageX - (tooltip.node().clientWidth / 2.0) + "px");
-  //   })
-  //   .on("mouseout", function(d) {
-  //     tooltip.style("visibility", "hidden");
-  //   })
-  //
 
   const circle = slot
     .append('circle')
@@ -296,25 +217,6 @@ data = d3.csv('november.csv')
       })
       .attr('cursor','default')
       .text(function(d){return d.train})
-      // .on("mouseover", function(d) {
-      //   d3.select(this).attr('fill','#000')
-      //   let tooltip_str = ''
-      //   if(d.minutes.length == 1){
-      //     tooltip_str = d.date + ', ' + d.hours + ':0' + d.minutes + d.ampm + '<br/>' + d.train + ' train<br/>' + d.cause + '<br/>' + d.message
-      //   }else{
-      //     tooltip_str = d.date + ', ' + d.hours + ':' + d.minutes + d.ampm + '<br/>' + d.train + ' train<br/>' + d.cause + '<br/>' + d.message
-      //   }
-      //   tooltip.html(tooltip_str)
-      //     .style("visibility", "visible");
-      // })
-      // .on("mousemove", function(d) {
-      //   tooltip.style("top", event.pageY - (tooltip.node().clientHeight + 5) + "px")
-      //       .style("left", event.pageX - (tooltip.node().clientWidth / 2.0) + "px");
-      // })
-      // .on("mouseout", function(d) {
-      //   d3.select(this).attr('fill','#fff')
-      //   tooltip.style("visibility", "hidden");
-      // })
 
     slot
       .on("mouseover", function(d) {
@@ -341,11 +243,6 @@ data = d3.csv('november.csv')
 
     const tooltip = d3.select("body").append("div")
             .attr("class", "tooltip");
-
-  // grid
-  //   .append("g")
-  //   .attr("class", "annotation-group")
-  //   .call(makeAnnotations)
 
     //change this to grab the causes list from the data
     let causes = ["Assault", "Brake Activation", "Bridge", "Broken Rail", "Broken Window", "Congestion", "Customer Altercation", "Customer Will Not Allow The Doors To Close", "Debris On Track", "Disruptive Passenger", "Disruptive People Who Broke Into The Conductor's Cab", "Door Problems", "Earlier Incident", "EMS Help", "FDNY", "Gap In Service", "Incident", "Inclement Weather", "Injured Customer", "Injured Person", "Investigation", "Late Arriving Trains", "Loss Of Power", "Lost Child", "Maintenance", "Malfunctioning Horn", "Mechanical Problems", "Medical Problems", "Network Communications Issue", "NYPD Activity", "NYPD Investigation", "Person Fell On Tracks", "Person Holding Doors", "Person On Tracks", "Person Riding Between Train Cars", "Person Stuck By A Train", "Police Activity", "Police Assistance", "Raccoon", "Rail Condition", "Rail Repair", "Rail Replacement", "Removed A Train From Service", "Residual Delays", "Shared Track", "Shopping Cart That Fell Onto The Tracks", "Shuttle Inspection", "Sick Passenger", "Signal Maintenance", "Signal Malfunction", "Signal Problems", "Signal Repair", "Slippery Rails", "Struck By Train", "Surfing", "Switch Problems", "Track Fire", "Track Geometry Train", "Track Maintenance", "Train Overran Platform", "Train Track Inspection", "Tree Branches", "Unauthorized Person", "Unsanitary Train", "Vandalized Trains", "Wet Leaves", "Work Trains"]
@@ -378,20 +275,6 @@ data = d3.csv('november.csv')
         else{return 0.1}
       })
     })
-
-    // var causeMenu = d3.select("#causedropdown")
-    //   causeMenu
-    //   .append("select")
-    //   .selectAll("option")
-    //       .data(causes)
-    //       .enter()
-    //       .append("option")
-    //       .attr("value", function(d){
-    //           return d.key;
-    //       })
-    //       .text(function(d){
-    //           return d.key;
-    //       })
 
   })
 
