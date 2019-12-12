@@ -141,10 +141,22 @@ this.scrollLeft -= (delta);
 e.preventDefault();
 });
 });
-data = d3.csv('november.csv')
-  .then((data) => {
+data = d3.csv('data/jan_sept_oct_nov.csv')
+  .then((csv) => {
 
-  const rowLength = 100,
+  csv.forEach(function(d){
+    alltrains = d.train.split(',')
+    d.trainone= alltrains[0]
+    hoursminutes = d.time.split(':')
+    d.hours = hoursminutes[0]
+    d.minutes = hoursminutes[1]
+  })
+  data = csv.filter(function(d){return d.trainone != '' && d.time != ''})
+  console.log('data length',data.length)
+  console.log('data',data)
+  notime = csv.filter(function(d){return d.time == ''})
+  console.log('no time',notime)
+  const rowLength = 380,
   size = 25,
   marginLeft = 0,
   marginRight = 0,
@@ -195,7 +207,7 @@ data = d3.csv('november.csv')
     })
     .attr('r', size/2)
     .attr('fill', function(d){
-      const whichtrain = trains.indexOf(d.train)
+      const whichtrain = trains.indexOf(d.trainone)
       return colors[whichtrain]
     })
     .attr('class','circle')
@@ -216,7 +228,7 @@ data = d3.csv('november.csv')
         return scale(n) + (size/2) + 4
       })
       .attr('cursor','default')
-      .text(function(d){return d.train})
+      .text(function(d){return d.trainone})
 
     slot
       .on("mouseover", function(d) {
