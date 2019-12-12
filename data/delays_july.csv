@@ -2259,13 +2259,13 @@ In addition, expect longer waits for southbound trains.",manh n and r trains sig
 49,NYC,AM,MANH,brake activation,7/16/2019,7/16/2019 9:35:22 AM,"Northbound 6 trains are arriving on express track at 125 St while we investigate what activated a train's brakes at that station.
 
 Expect delays.",manh 6 train brakes activated,9:35:22,6,,
-1,NYC,AM,MANH,,7/16/2019,7/16/2019 9:28:35 AM,We have cleared congestion that was affecting southbound 4 and 5 trains going into Manhattan after an unauthorized person went to the tracks at 149 St-Grand Concourse to retrieve their cell phone.,updated: manh 4 and 5 trains unauthorized person,9:28:35,"4, 5",,updated
+1,NYC,AM,MANH, unauthorized person went to the tracks at 149 St-Grand Concourse to retrieve their cell phone.,7/16/2019,7/16/2019 9:28:35 AM,We have cleared congestion that was affecting southbound 4 and 5 trains going into Manhattan after an unauthorized person went to the tracks at 149 St-Grand Concourse to retrieve their cell phone.,updated: manh 4 and 5 trains unauthorized person,9:28:35,"4, 5",,updated
 7,NYC,AM,MANH,nypd activity,7/16/2019,7/16/2019 9:20:27 AM,"Northbound A, B, C and D trains are proceeding with delays after NYPD concluded their investigation at 125 St.",updated: manh a and d trains nypd activity,9:20:27,"a, d",person,
 10,NYC,AM,MANH,nypd activity,7/16/2019,7/16/2019 9:15:43 AM,"Northbound A and D trains are running on the local track from 59 St-Columbus Circle to 125 St while NYPD responds to a request for assistance at 125 St.
 
 Expect delays in A, B, C and D service.",updated: manh a and d trains nypd activity,9:15:43,"a, d",person,
 12,NYC,AM,MANH,nypd activity,7/16/2019,7/16/2019 9:07:41 AM,Northbound A and D trains are delayed while NYPD responds to a request for assistance at 125 St.,manh a and d trains nypd activity,9:07:41,"a, d",person,
-20,NYC,AM,MANH,unauthorized person,7/16/2019,7/16/2019 8:45:52 AM,Southbound 4 and 5 trains are running with delays going into Manhattan because of congestion caused by an unauthorized person who went on the tracks at 149 St-Grand Concourse to retrieve a cell phone.,manh 4 and 5 trains unauthorized person,8:45:52,"4, 5",person,
+!,NYC,AM,MANH,unauthorized person went to the tracks at 149 St-Grand Concourse to retrieve their cell phone.,7/16/2019,7/16/2019 8:45:52 AM,Southbound 4 and 5 trains are running with delays going into Manhattan because of congestion caused by an unauthorized person who went on the tracks at 149 St-Grand Concourse to retrieve a cell phone.,manh 4 and 5 trains unauthorized person,8:45:52,"4, 5",person,
 33,NYC,AM,QNS,signal problems,7/16/2019,7/16/2019 8:02:39 AM,"7 trains are running with delays in both directions because of a signal problem at Hunters Point Av and after we moved a work train that experienced mechanical problems in the tunnel between Manhattan and Queens.
 
 Expect long waits for Main St-bound 7 trains while we clear congestion caused by the stalled work train.",updated: qns 7 trains work train/signal problem,8:02:39,7,train,
@@ -2643,8 +2643,8 @@ Expect delays in uptown 4 and 6 train service.",manh 4 trains brakes activated,1
 19,NYC,PM,MANH,medical problems,7/12/2019,7/12/2019 8:38:22 PM,Southbound 6 trains are proceeding with delays after we got medical assistance for someone at 103 St.,updated: manh 6 trains medical assistance,8:38:22,6,person,
 21,NYC,PM,MANH,medical problems,7/12/2019,7/12/2019 8:35:57 PM,Southbound 6 trains are delayed while we get medical assistance for someone at 103 St.,manh 6 trains medical assistance,8:35:57,6,person,
 24,NYC,PM,MANH,signal problems,7/12/2019,7/12/2019 8:30:43 PM,"Southbound 4, 5 and 6 trains are delayed because of a signal problem at 125 St.",manh 4 5 and 6 trains signal problems,8:30:43,"4, 5, 6",train,
-33,NYC,PM,MANH,,7/12/2019,7/12/2019 8:18:24 PM,Northbound 2 trains are proceeding with delays after NYPD responded and safely removed an unauthorized dog aboard a train at 149 St-Grand Concourse.,updated: manh 2 and 3 trains unauthorized dog aboard train,8:18:24,"2, 3",,updated
-5,NYC,PM,MANH,,7/12/2019,7/12/2019 7:34:06 PM,Northbound 2 and 3 trains are holding in stations on the Upper West Side while we request NYPD assistance with an unauthorized dog aboard a train at 135 St.,manh 2 and 3 trains unauthorized dog aboard train,7:34:06,"2, 3",,
+33,NYC,PM,MANH,unauthorized dog aboard a train,7/12/2019,7/12/2019 8:18:24 PM,Northbound 2 trains are proceeding with delays after NYPD responded and safely removed an unauthorized dog aboard a train at 149 St-Grand Concourse.,updated: manh 2 and 3 trains unauthorized dog aboard train,8:18:24,"2, 3",,updated
+5,NYC,PM,MANH,unauthorized dog aboard a train,7/12/2019,7/12/2019 7:34:06 PM,Northbound 2 and 3 trains are holding in stations on the Upper West Side while we request NYPD assistance with an unauthorized dog aboard a train at 135 St.,manh 2 and 3 trains unauthorized dog aboard train,7:34:06,"2, 3",,
 28,NYC,PM,MANH,signal problems,7/12/2019,7/12/2019 6:39:48 PM,"Southbound 4 and 5 trains have resumed making regular station stops after we addressed a signal problem at 125 St.
 
 Continue to expect delays as we get trains back on/close to schedule.",updated: manh 4 and 5 trains signal problem,6:39:48,"4, 5",train,
@@ -2766,15 +2766,15 @@ Expect delays in D, N, and R train service.",bklyn r train door problems,7:23:50
 49,NYC,PM,MANH,mechanical problems,7/11/2019,7/11/2019 4:44:30 PM,Southbound 6 trains are delayed while we remove a train with mechanical problems from service at 125 St.,manh 6 train mechanical problems,4:44:30,6,train,
 14,NYC,PM,MANH,,7/11/2019,7/11/2019 4:27:23 PM,Southbound 6 trains are proceeding with delays after NYPD responded to reports of a passenger being disruptive at Bleecker St.,updated: manh 6 train disruptive passenger,4:27:23,6,,updated
 19,NYC,PM,MANH,disruptive passenger,7/11/2019,7/11/2019 4:22:04 PM,Southbound 6 trains are delayed while we request NYPD assistance with a passenger being disruptive at Bleecker St.,manh 6 train disruptive passenger,4:22:04,6,person,
-42,NYC,PM,QNS,,7/11/2019,7/11/2019 2:27:37 PM,A and Far Rockaway S trains are proceeding with delays after NYPD safely removed a dog from the tracks between Broad Channel and Howard Beach JFK.,qns a and far rockaway shuttle trains dog on the tracks,2:27:37,a,,
-5,NYC,PM,QNS,,7/11/2019,7/11/2019 2:04:17 PM,"A trains are not connecting the Rockaways to the rest of Queens/Brooklyn while we remove third rail power to safely catch a dog running on the tracks.
+!,NYC,PM,QNS,removed dog from tracks,7/11/2019,7/11/2019 2:27:37 PM,A and Far Rockaway S trains are proceeding with delays after NYPD safely removed a dog from the tracks between Broad Channel and Howard Beach JFK.,qns a and far rockaway shuttle trains dog on the tracks,2:27:37,a,,
+!,NYC,PM,QNS,dog,7/11/2019,7/11/2019 2:04:17 PM,"A trains are not connecting the Rockaways to the rest of Queens/Brooklyn while we remove third rail power to safely catch a dog running on the tracks.
 
 A trains will run from Far Rockaway-Mott Av to Broad Channel to Rockaway Park and back. 
 
 Southbound A trains are ending at Howard Beach-JFK Airport. 
 
 For service to/from Broad Channel, take the Q52-SBS or Q53-SBS. See nearby buses at bustime.mta.info.",qns a trains dog on tracks,2:04:17,a,,
-9,NYC,PM,QNS,,7/11/2019,7/11/2019 1:50:29 PM,"A and Rockaway Park S trains are being held in both directions in the Rockaways while we attempt to safely catch a dog running on the tracks.
+9,NYC,PM,QNS,dog,7/11/2019,7/11/2019 1:50:29 PM,"A and Rockaway Park S trains are being held in both directions in the Rockaways while we attempt to safely catch a dog running on the tracks.
 
 Expect delays in A train service.",qns a train delays,1:50:29,a,,
 22,NYC,PM,,track maintenance,7/11/2019,7/11/2019 1:10:52 PM,Astoria-bound N trains are running with delays while we conduct track maintenance in the tunnel between Manhattan and Queens.,qns/manh n train track maintenance,1:10:52,n,train,
@@ -3241,13 +3241,13 @@ Expect delays in A, C and F train service as congestion clears.",updated: manh a
 41,NYC,PM,BKLYN,nypd activity,7/8/2019,7/8/2019 2:32:26 PM,Southbound D and N trains are delayed while NYPD responds to a request for assistance at 36 St (Brooklyn).,bklyn d and n trains nypd activity,2:32:26,"d, n",person,
 45,NYC,PM,BX,medical problems,7/8/2019,7/8/2019 2:20:06 PM,6 trains are running with delays in both directions while we get medical help for someone at Pelham Bay Park.,bx 6 trains medical assistance,2:20:06,6,person,
 46,NYC,PM,MANH,signal problems,7/8/2019,7/8/2019 2:19:47 PM,Southbound C and E trains are running at slower speeds near W 4 St-Wash Sq because of a signal problem at that station.,manh c and e trains signal problem,2:19:47,"c, e",train,
-5,NYC,PM,MANH,,7/8/2019,7/8/2019 12:02:21 PM,"L trains are running at normal speeds again after MTA employees retrieved a phone from the tracks at 8 Av.
+!,NYC,PM,MANH,removed phone from tracks,7/8/2019,7/8/2019 12:02:21 PM,"L trains are running at normal speeds again after MTA employees retrieved a phone from the tracks at 8 Av.
 
 As a reminder, please never enter the tracks for any reason unless you've been instructed by an MTA employee. It is incredibly dangerous, and it can delay thousands of travelers.
 
 Instead, you can contact an MTA employee or use a help point intercom found on most platforms.",updated: manh l train retrieving phone,12:02:21,l,,updated
 10,NYC,AM,QNS,investigation,7/8/2019,7/8/2019 11:59:01 AM,Southbound F trains are proceeding with delays after NYPD investigated reports of an altercation at 21 St-Queensbridge.,qns f train nypd investigation,11:59:01,f,person,
-16,NYC,AM,MANH,,7/8/2019,7/8/2019 11:43:38 AM,L trains are running at slower speeds near 8 Av after we received reports that someone is attempting to retrieve their phone from the track.,manh l train retrieving phone,11:43:38,l,,
+16,NYC,AM,MANH,attempting to retrieve phone from tracks,7/8/2019,7/8/2019 11:43:38 AM,L trains are running at slower speeds near 8 Av after we received reports that someone is attempting to retrieve their phone from the track.,manh l train retrieving phone,11:43:38,l,,
 21,NYC,AM,MANH,investigation,7/8/2019,7/8/2019 11:28:44 AM,"Northbound N, R and W trains have resumed stopping at 49 St after NYPD concluded its investigation at Times Sq-42 St.
 
 Expect delays as service returns to normal.",updated: manh n r and w trains nypd investigation,11:28:44,"n, r, w",person,
