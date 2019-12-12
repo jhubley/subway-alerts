@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <style>
+    div{
+      margin:20px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <pre>
+    <div id="content"></div>
+  </pre>
+  <script>
+
+  d3.csv("november2019.csv", function(error, data) {
+    if (error) throw error;
+    console.log('data',data)
+
+      var what = d3.nest()
+          .key(d => d.cause)
+          .rollup(function(v){return v.length})
+          .object(data)
+
+        var whatinfo = JSON.stringify(what,null,2);
+        $("#content").html(whatinfo)
+
+  })
+
+  </script>
+</body>
+</html>
