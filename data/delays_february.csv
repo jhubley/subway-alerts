@@ -1635,119 +1635,118 @@ See a station agent to receive a courtesy pass for continuing train or bus servi
 0,NYC,AM,MANH,rail replacement,2/15/2019,2/15/2019 1:41:46 AM,Some downtown 4 and 6 trains are running on the express track from 125 St to Grand Central-42 St while our crews replace rails at 86 St.,manh 4 and 6 trains rail replacement,1:41:46,"4, 6",
 14,NYC,AM,MANH,unsanitary train,2/19/2019,2/19/2019 9:40:44 AM,Northbound 4 and 5 trains are proceeding with delays after we isolated a train car with a soiled interior from service at Grand Central-42 St.,manh 4 and 5 trains isolate train car,9:40:44,"4, 5",
 13,NYC,PM,MANH,unsanitary train,2/23/2019,2/23/2019 1:01:36 PM,Southbound 4 5 and 6 trains are running with delays after we removed a train with a soiled interior from service at Grand Central-42 St.,manh 4 5 and 6 trains remove train from service,1:01:36,"4, 5, 6",
-16,NYC,PM,MANH,,2/12/2019,2/12/2019 6:02:13 PM,"Southbound 4 and 5 trains are running on the local track from 14 St-Union Sq to Brooklyn Bridge-City Hall because of a platform extender malfunction at 14 St-Union Sq.
+16,NYC,PM,MANH,platform extender malfunction,2/12/2019,2/12/2019 6:02:13 PM,"Southbound 4 and 5 trains are running on the local track from 14 St-Union Sq to Brooklyn Bridge-City Hall because of a platform extender malfunction at 14 St-Union Sq.
 
 Expect delays in 4, 5 and 6 train service.",manh 4 5 6 trains platform extender malfunction,6:02:13,"4, 5, 6",
-23,NYC,AM,MANH,,2/9/2019,2/9/2019 1:57:10 AM,Times Square-bound 3 trains are running on the local track from 96 St to 72 St while we replace rails at 96 St.,manh 3 trains rail replacement,1:57:10,3,
-36,NYC,AM,MANH,,2/2/2019,2/2/2019 2:22:29 AM,"2 and 3 trains are delayed in both directions while crews replace rails between 116 St and 135 St.
+23,NYC,AM,MANH,rail replacement,2/9/2019,2/9/2019 1:57:10 AM,Times Square-bound 3 trains are running on the local track from 96 St to 72 St while we replace rails at 96 St.,manh 3 trains rail replacement,1:57:10,3,
+36,NYC,AM,MANH,rail replacement,2/2/2019,2/2/2019 2:22:29 AM,"2 and 3 trains are delayed in both directions while crews replace rails between 116 St and 135 St.
 
 Downtown 2 and 3 trains are holding in stations. 
 
 Uptown 3 trains are holding in stations. 
 
 Bronx-bound 2 trains are running at slower speeds in the area.",manh 2 and 3 trains rail replacement,2:22:29,"2, 3",
-45,NYC,PM,MANH,,2/10/2019,2/10/2019 8:41:00 PM,Northbound 2 and 3 trains are delayed while crews remove a dirty train from service at 96 St.,manh 2 and 3 trains dirty train,8:41:00,"2, 3",
-41,NYC,AM,MANH,,2/20/2019,2/20/2019 11:50:23 AM,"There are delays and service changes in southbound 2 and 3 service because a train's brakes automatically activated at 125 St.
+45,NYC,PM,MANH,unsanitary train,2/10/2019,2/10/2019 8:41:00 PM,Northbound 2 and 3 trains are delayed while crews remove a dirty train from service at 96 St.,manh 2 and 3 trains dirty train,8:41:00,"2, 3",
+41,NYC,AM,MANH,brake activation,2/20/2019,2/20/2019 11:50:23 AM,"There are delays and service changes in southbound 2 and 3 service because a train's brakes automatically activated at 125 St.
 
 Southbound 2 trains are operating over the 5 line between 149 St-Grand Concourse and Nevins St until our crews address the incident at 125 St.",manh 2 and 3 trains brakes in emergency,11:50:23,"2, 3",
-8,NYC,PM,MANH,,2/19/2019,2/19/2019 4:20:45 PM,Southbound 1 trains are delayed in both directions because a train's brakes were automatically activated at Rector St.,manh 1 trains activated brakes,4:20:45,1,
-25,NYC,AM,MANH,,2/10/2019,2/10/2019 2:43:07 AM,"South Ferry-bound 1 and Flatbush Av-bound 2 trains are running express from 72 St to Times Sq-42 St while we move work equipment at Times Sq-42 St.
+8,NYC,PM,MANH,brake activation,2/19/2019,2/19/2019 4:20:45 PM,Southbound 1 trains are delayed in both directions because a train's brakes were automatically activated at Rector St.,manh 1 trains activated brakes,4:20:45,1,
+25,NYC,AM,MANH,move equipment,2/10/2019,2/10/2019 2:43:07 AM,"South Ferry-bound 1 and Flatbush Av-bound 2 trains are running express from 72 St to Times Sq-42 St while we move work equipment at Times Sq-42 St.
 
 For service to/from bypassed stations, consider taking a 242 St or Wakefield-bound train.",manh 1 and 2 trains work equipment,2:43:07,"1, 2",
-49,NYC,AM,MANH,,2/14/2019,2/14/2019 3:54:38 AM,Southbound 1 and 2 trains are holding in stations while our crews replace rails on the express track at Franklin St.,manh 1 and 2 trains rail replacement,3:54:38,"1, 2",
-13,NYC,AM,MANH,,2/10/2019,2/10/2019 3:52:20 AM,"South Ferry-bound 1 and Flatbush Av-bound 2 trains are running express from 96 St to 72 St while we move work equipment at 79 St.
+49,NYC,AM,MANH,rail replacement,2/14/2019,2/14/2019 3:54:38 AM,Southbound 1 and 2 trains are holding in stations while our crews replace rails on the express track at Franklin St.,manh 1 and 2 trains rail replacement,3:54:38,"1, 2",
+13,NYC,AM,MANH,move equipment,2/10/2019,2/10/2019 3:52:20 AM,"South Ferry-bound 1 and Flatbush Av-bound 2 trains are running express from 96 St to 72 St while we move work equipment at 79 St.
 
 For service to/from bypassed stations, consider taking a 242 St or Wakefield-bound train.",manh 1 and 2 trains moving work equipment,3:52:20,"1, 2",
-45,NYC,PM,MANH,,2/19/2019,2/19/2019 4:38:14 PM,"Some northbound 2 and 3 trains are running on the local track from Chambers St to 96 St after a train's brakes were automatically activated at Rector St.
+45,NYC,PM,MANH,brake activation,2/19/2019,2/19/2019 4:38:14 PM,"Some northbound 2 and 3 trains are running on the local track from Chambers St to 96 St after a train's brakes were automatically activated at Rector St.
 
 Expect delays in northbound 1, 2 and 3 train service.",manh 1 2 and 3 trains activated brakes,4:38:14,"1, 2, 3",
-2,NYC,PM,,,2/7/2019,2/7/2019 11:36:09 PM,"Southbound D trains are running on the local track from 125 St to 59 St-Columbus Circle because of a work train with a mechanical problem at 86 St.
+2,NYC,PM,,mechanical problems,2/7/2019,2/7/2019 11:36:09 PM,"Southbound D trains are running on the local track from 125 St to 59 St-Columbus Circle because of a work train with a mechanical problem at 86 St.
 
 Expect delays in Southbound D train service.",d trains,11:36:09,d,
-48,NYC,AM,,,2/12/2019,2/12/2019 10:22:40 AM,"Take care traveling during today's storm. Our crews are working to keep you safe by removing snow, and salting and sanding stairways and platforms.",city wide all routes winter weather advisory,10:22:40,,
-23,NYC,AM,BX,,2/13/2019,2/13/2019 1:40:50 AM,"Pelham Bay Park-bound 6 trains are running express from 3 Av-138 St to Hunts Point Av while crews replace rails at Hunts Point Av. 
+23,NYC,AM,BX,rail replacement,2/13/2019,2/13/2019 1:40:50 AM,"Pelham Bay Park-bound 6 trains are running express from 3 Av-138 St to Hunts Point Av while crews replace rails at Hunts Point Av. 
 
 For bypassed stations, take a Brooklyn Bridge-bound 6 train.",bx 6 trains rail replacement,1:40:50,6,
-24,NYC,AM,BX,,2/12/2019,2/12/2019 1:56:00 AM,"Northbound 6 trains are running express from 3 Av-138 St to Parkchester while our crews replace rails at Hunts Point Av.
+24,NYC,AM,BX,rail replacement,2/12/2019,2/12/2019 1:56:00 AM,"Northbound 6 trains are running express from 3 Av-138 St to Parkchester while our crews replace rails at Hunts Point Av.
 
 For bypassed stations take a southbound train.",bx 6 trains rail replacement,1:56:00,6,
-15,NYC,PM,BX,,2/24/2019,2/24/2019 8:50:43 PM,Northbound 6 trains are running with delays after a train's brakes were activated at St Lawrence Av.,bx 6 trains activated brakes,8:50:43,6,
-25,NYC,AM,BX,,2/6/2019,2/6/2019 1:20:50 AM,"There is no 5 shuttle train service in both directions between East 180 St and Dyre Av while crews perform network hardware/software maintenance at East 180 St.
+15,NYC,PM,BX,brake activation,2/24/2019,2/24/2019 8:50:43 PM,Northbound 6 trains are running with delays after a train's brakes were activated at St Lawrence Av.,bx 6 trains activated brakes,8:50:43,6,
+25,NYC,AM,BX,network hardware/software maintenance,2/6/2019,2/6/2019 1:20:50 AM,"There is no 5 shuttle train service in both directions between East 180 St and Dyre Av while crews perform network hardware/software maintenance at East 180 St.
 Free shuttle buses are running in both directions making nearby station stops.",bx 5 trains network hardware/software,1:20:50,5,
-4,NYC,PM,BX,,2/24/2019,2/24/2019 9:16:56 PM,Southbound 5 trains are running with delays after a train's emergency brakes were activated at Baychester Av.,bx 5 trains activated brakes,9:16:56,5,
-41,NYC,AM,BX,,2/2/2019,2/2/2019 2:02:09 AM,Downtown 4 trains are delayed while our crews clean an unsanitary car at Woodlawn.,bx 4 trains unsanitary car,2:02:09,4,
-37,NYC,AM,BX,,2/27/2019,2/27/2019 3:25:50 AM,Southbound 4 trains are delayed while crews replace rails at 138 St-Grand Concourse.,bx 4 trains rail replacement,3:25:50,4,
-19,NYC,PM,BX,,2/20/2019,2/20/2019 10:36:45 PM,"New Lots Av-bound 4 trains are running on the express track from Burnside Av to 125 St while crews repair third rail equipment at 149 St-Grand Concourse.
+4,NYC,PM,BX,brake activation,2/24/2019,2/24/2019 9:16:56 PM,Southbound 5 trains are running with delays after a train's emergency brakes were activated at Baychester Av.,bx 5 trains activated brakes,9:16:56,5,
+41,NYC,AM,BX,unsanitary train,2/2/2019,2/2/2019 2:02:09 AM,Downtown 4 trains are delayed while our crews clean an unsanitary car at Woodlawn.,bx 4 trains unsanitary car,2:02:09,4,
+37,NYC,AM,BX,rail replacement,2/27/2019,2/27/2019 3:25:50 AM,Southbound 4 trains are delayed while crews replace rails at 138 St-Grand Concourse.,bx 4 trains rail replacement,3:25:50,4,
+19,NYC,PM,BX,third rail repair,2/20/2019,2/20/2019 10:36:45 PM,"New Lots Av-bound 4 trains are running on the express track from Burnside Av to 125 St while crews repair third rail equipment at 149 St-Grand Concourse.
 For bypassed stations, take a Woodlawn-bound 4 train.",bx 4 trains equipment repair,10:36:45,4,
-3,NYC,AM,BX,,2/27/2019,2/27/2019 10:22:12 AM,Southbound 4 and 5 trains are running with delays between 149 St-Grand Concourse and Franklin Av because of track test train in the area.,bx 4 and 5 trains test train,10:22:12,"4, 5",
-3,NYC,AM,BX,,2/15/2019,2/15/2019 3:59:33 AM,Flatbush Av-bound 2 trains are delayed after we took a train out of service at Burke Av.,bx 2 trains,3:59:33,2,
-45,NYC,AM,,,2/4/2019,2/4/2019 8:53:37 AM,G trains are resuming with delays following police activity at Court Sq and a train with door problems at Broadway.,bklyn/qns g trains earlier incideints,8:53:37,g,
-25,NYC,AM,,,2/13/2019,2/13/2019 9:14:43 AM,Canarsie-bound L trains are running with longer-than-expected gaps in service after we removed a train with racist graffiti from service at Myrtle-Wyckoff Avs.,bklyn/manh l trains racist graffiti,9:14:43,l,
-41,NYC,AM,BKLYN,,2/16/2019,2/16/2019 2:18:27 AM,Coney Island-bound Q trains are holding in stations while our crews replace rails at 7 Av.,bklyn q trains rail replacement,2:18:27,q,
-27,NYC,PM,BKLYN,,2/20/2019,2/20/2019 7:39:53 PM,Northbound Q trains are running with delays because a train's brakes were automatically activated at Dekalb Av.,bklyn q trains activated brakes,7:39:53,q,
-45,NYC,PM,BKLYN,,2/20/2019,2/20/2019 6:09:03 PM,"Northbound Q trains are running with delays after a train's brakes were automatically activated at Dekalb Av,",bklyn q trains activated brakes,6:09:03,q,
-29,NYC,PM,BKLYN,,2/20/2019,2/20/2019 3:52:28 PM,"There are delays and services changes on B, D, N, and Q train lines because a train's brakes were automatically activated at DeKalb Av. 
+3,NYC,AM,BX,track test train,2/27/2019,2/27/2019 10:22:12 AM,Southbound 4 and 5 trains are running with delays between 149 St-Grand Concourse and Franklin Av because of track test train in the area.,bx 4 and 5 trains test train,10:22:12,"4, 5",
+3,NYC,AM,BX,removed a train from service,2/15/2019,2/15/2019 3:59:33 AM,Flatbush Av-bound 2 trains are delayed after we took a train out of service at Burke Av.,bx 2 trains,3:59:33,2,
+45,NYC,AM,,earlier incident,2/4/2019,2/4/2019 8:53:37 AM,G trains are resuming with delays following police activity at Court Sq and a train with door problems at Broadway.,bklyn/qns g trains earlier incideints,8:53:37,g,
+!,NYC,AM,,removed a train with racist graffiti from service,2/13/2019,2/13/2019 9:14:43 AM,Canarsie-bound L trains are running with longer-than-expected gaps in service after we removed a train with racist graffiti from service at Myrtle-Wyckoff Avs.,bklyn/manh l trains racist graffiti,9:14:43,l,
+41,NYC,AM,BKLYN,rail replacement,2/16/2019,2/16/2019 2:18:27 AM,Coney Island-bound Q trains are holding in stations while our crews replace rails at 7 Av.,bklyn q trains rail replacement,2:18:27,q,
+27,NYC,PM,BKLYN,brake activation,2/20/2019,2/20/2019 7:39:53 PM,Northbound Q trains are running with delays because a train's brakes were automatically activated at Dekalb Av.,bklyn q trains activated brakes,7:39:53,q,
+45,NYC,PM,BKLYN,brake activation,2/20/2019,2/20/2019 6:09:03 PM,"Northbound Q trains are running with delays after a train's brakes were automatically activated at Dekalb Av,",bklyn q trains activated brakes,6:09:03,q,
+29,NYC,PM,BKLYN,brake activation,2/20/2019,2/20/2019 3:52:28 PM,"There are delays and services changes on B, D, N, and Q train lines because a train's brakes were automatically activated at DeKalb Av. 
 
 Southbound Q trains are running on the N line from Canal St to Coney Island-Stillwell Av.
 
 Southbound B trains are running on the D line from Canal St to Coney Island-Stillwell Av.
 
 The last stop on some northbound Q trains will be Prospect Pk.",bklyn q trains activated brakes,3:52:28,q,
-14,NYC,AM,BKLYN,,2/15/2019,2/15/2019 1:10:26 AM,Northbound N trains are delayed while NYPD responds to a report of a customer assault at 86 St.,bklyn n trains customer assault,1:10:26,n,
-29,NYC,AM,BKLYN,,2/28/2019,2/28/2019 11:52:01 AM,N trains are temporarily running on the D line in both directions between Coney Island and 36 St (Bklyn) while we perform a crane operation near 86 St.,bklyn n trains crane operation,11:52:01,n,
-42,NYC,AM,BKLYN,,2/25/2019,2/25/2019 2:44:28 AM,Northbound N trains are running with delays after a train's brakes were activated at 86 St (BKLYN).,bklyn n trains activated brakes,2:44:28,n,
-43,NYC,PM,BKLYN,,2/15/2019,2/15/2019 11:45:39 PM,Astoria-bound N trains are proceeding with delays after our crews removed an unsanitary car from service at 86 St (Brooklyn).,bklyn n trains,11:45:39,n,
-18,NYC,AM,BKLYN,,2/27/2019,2/27/2019 2:06:33 AM,Southbound N and R trains are delayed while we request NYPD assistance for a customer assault at 53 St.,bklyn n and r trains customer assault,2:06:33,"n, r",
-22,NYC,PM,BKLYN,,2/28/2019,2/28/2019 10:40:19 PM,Essex St-bound M trains and Broad St -bound J trains are holding in stations because of a train with its brakes activated at Lorimer St.,bklyn m and j trains activated brakes,10:40:19,"m, j",
-44,NYC,PM,BKLYN,,2/13/2019,2/13/2019 4:08:30 PM,8 Av-bound L trains are running with delays while we remove a vandalized train from service at Broadway Junction.,bklyn l trains vandalism,4:08:30,l,
-45,NYC,PM,BKLYN,,2/6/2019,2/6/2019 10:33:01 PM,"Because of tonight's planned work the last 8 Av-bound L train will depart Rockaway Parkway at 10:32 pm, the last Canarsie-bound L train will depart 8 Av at 11:13 pm.",bklyn l line last train departures,10:33:01,l,
-49,NYC,AM,BKLYN,,2/28/2019,2/28/2019 3:37:36 AM,Church Av-bound G trains are delayed while crews perform urgent track maintenance at Hoyt-Schermerhorn Sts.,bklyn g trains urgent track repairs,3:37:36,g,
-40,NYC,AM,BKLYN,,2/27/2019,2/27/2019 8:16:18 AM,"There are delays and service changes in northbound F trains because a train's brakes were automatically activated at Jay St.
+14,NYC,AM,BKLYN,assault,2/15/2019,2/15/2019 1:10:26 AM,Northbound N trains are delayed while NYPD responds to a report of a customer assault at 86 St.,bklyn n trains customer assault,1:10:26,n,
+29,NYC,AM,BKLYN,crane operation,2/28/2019,2/28/2019 11:52:01 AM,N trains are temporarily running on the D line in both directions between Coney Island and 36 St (Bklyn) while we perform a crane operation near 86 St.,bklyn n trains crane operation,11:52:01,n,
+42,NYC,AM,BKLYN,brake activation,2/25/2019,2/25/2019 2:44:28 AM,Northbound N trains are running with delays after a train's brakes were activated at 86 St (BKLYN).,bklyn n trains activated brakes,2:44:28,n,
+43,NYC,PM,BKLYN,unsanitary train,2/15/2019,2/15/2019 11:45:39 PM,Astoria-bound N trains are proceeding with delays after our crews removed an unsanitary car from service at 86 St (Brooklyn).,bklyn n trains,11:45:39,n,
+18,NYC,AM,BKLYN,assault,2/27/2019,2/27/2019 2:06:33 AM,Southbound N and R trains are delayed while we request NYPD assistance for a customer assault at 53 St.,bklyn n and r trains customer assault,2:06:33,"n, r",
+22,NYC,PM,BKLYN,brake activation,2/28/2019,2/28/2019 10:40:19 PM,Essex St-bound M trains and Broad St -bound J trains are holding in stations because of a train with its brakes activated at Lorimer St.,bklyn m and j trains activated brakes,10:40:19,"m, j",
+44,NYC,PM,BKLYN,vandalized trains,2/13/2019,2/13/2019 4:08:30 PM,8 Av-bound L trains are running with delays while we remove a vandalized train from service at Broadway Junction.,bklyn l trains vandalism,4:08:30,l,
+45,NYC,PM,BKLYN,planned work,2/6/2019,2/6/2019 10:33:01 PM,"Because of tonight's planned work the last 8 Av-bound L train will depart Rockaway Parkway at 10:32 pm, the last Canarsie-bound L train will depart 8 Av at 11:13 pm.",bklyn l line last train departures,10:33:01,l,
+49,NYC,AM,BKLYN,track maintenance,2/28/2019,2/28/2019 3:37:36 AM,Church Av-bound G trains are delayed while crews perform urgent track maintenance at Hoyt-Schermerhorn Sts.,bklyn g trains urgent track repairs,3:37:36,g,
+40,NYC,AM,BKLYN,brake activation,2/27/2019,2/27/2019 8:16:18 AM,"There are delays and service changes in northbound F trains because a train's brakes were automatically activated at Jay St.
 
 Northbound F trains are running on the A line from Jay St to W 4 St. 
 
 Expect delays in northbound F service.",bklyn f train brakes in emergency,8:16:18,f,
-0,NYC,AM,BKLYN,,2/9/2019,2/9/2019 7:27:19 AM,F and G trains are delayed in both directions because of signal problems between Jay St-MetroTech and Bergen St.,bklyn f and g trains sigmal problems,7:27:19,"f, g",
-18,NYC,AM,BKLYN,,2/9/2019,2/9/2019 2:05:27 AM,"Jamaica-bound F trains are running express from 4 Av-9 St to Jay St-MetroTech and Court Square-bound G trains are delayed while we replace rails at Bergen St. 
+0,NYC,AM,BKLYN,signal problems,2/9/2019,2/9/2019 7:27:19 AM,F and G trains are delayed in both directions because of signal problems between Jay St-MetroTech and Bergen St.,bklyn f and g trains sigmal problems,7:27:19,"f, g",
+18,NYC,AM,BKLYN,rail replacement,2/9/2019,2/9/2019 2:05:27 AM,"Jamaica-bound F trains are running express from 4 Av-9 St to Jay St-MetroTech and Court Square-bound G trains are delayed while we replace rails at Bergen St. 
 
 For bypassed stations, take a southbound F or G train.",bklyn f and g trains rail replacement,2:05:27,"f, g",
-24,NYC,PM,BKLYN,,2/19/2019,2/19/2019 5:30:00 PM,Southbound D trains are running with delays because a train's brakes were automatically activated at 79 St.,bklyn d trains activated brakes,5:30:00,d,
-24,NYC,PM,BKLYN,,2/7/2019,2/7/2019 12:19:08 PM,"Some D trains were dispatched over the N line from Stillwell Av to 36 St while we upgrade our car-cleaning equipment at the train yard.
+24,NYC,PM,BKLYN,brake activation,2/19/2019,2/19/2019 5:30:00 PM,Southbound D trains are running with delays because a train's brakes were automatically activated at 79 St.,bklyn d trains activated brakes,5:30:00,d,
+24,NYC,PM,BKLYN,upgrade our car-cleaning equipment at the train yard,2/7/2019,2/7/2019 12:19:08 PM,"Some D trains were dispatched over the N line from Stillwell Av to 36 St while we upgrade our car-cleaning equipment at the train yard.
 
 Expect delays in B, D, N, and Q train service as we resume running along regular routes.",bklyn d train equipment upgrade,12:19:08,d,
-3,NYC,PM,BKLYN,,2/14/2019,2/14/2019 11:11:52 PM,"Northbound D, N and R trains are delayed while we remove an unsanitary car from service at Prospect Av.",bklyn d n and r trains unsanitary car,11:11:52,"d, n, r",
-17,NYC,AM,BKLYN,,2/17/2019,2/17/2019 1:49:30 AM,"Northbound D, N and R trains are running express from 36 St to Atlantic Av-Barclays Center while crews replace rails at 25 St. 
+3,NYC,PM,BKLYN,unsanitary train,2/14/2019,2/14/2019 11:11:52 PM,"Northbound D, N and R trains are delayed while we remove an unsanitary car from service at Prospect Av.",bklyn d n and r trains unsanitary car,11:11:52,"d, n, r",
+17,NYC,AM,BKLYN,rail replacement,2/17/2019,2/17/2019 1:49:30 AM,"Northbound D, N and R trains are running express from 36 St to Atlantic Av-Barclays Center while crews replace rails at 25 St. 
 
 For bypassed stations, take a southbound train.",bklyn d n and r trains rail replacement,1:49:30,"d, n, r",
-44,NYC,AM,BKLYN,,2/8/2019,2/8/2019 2:03:09 AM,"Northbound D, N, and R trains are running with delays while our crews safely move work equipment at 36 St (BKLYN).",bklyn d n and r trains moving work equipment,2:03:09,"d, n, r",
-7,NYC,AM,BKLYN,,2/26/2019,2/26/2019 7:35:40 AM,Southbound D and N trains are making local stops between Atlantic Av-Barclays Ctr and 36 St while we perform emergency repairs in the tunnel.,bklyn d and n trains tunnel repairs,7:35:40,"d, n",
-29,NYC,PM,BKLYN,,2/28/2019,2/28/2019 10:27:12 PM,"D trains are experiencing service changes and delays because of a stalled train at Stillwell Av. 
+44,NYC,AM,BKLYN,move equipment,2/8/2019,2/8/2019 2:03:09 AM,"Northbound D, N, and R trains are running with delays while our crews safely move work equipment at 36 St (BKLYN).",bklyn d n and r trains moving work equipment,2:03:09,"d, n, r",
+7,NYC,AM,BKLYN,repairs in the tunnel,2/26/2019,2/26/2019 7:35:40 AM,Southbound D and N trains are making local stops between Atlantic Av-Barclays Ctr and 36 St while we perform emergency repairs in the tunnel.,bklyn d and n trains tunnel repairs,7:35:40,"d, n",
+29,NYC,PM,BKLYN,stalled train,2/28/2019,2/28/2019 10:27:12 PM,"D trains are experiencing service changes and delays because of a stalled train at Stillwell Av. 
 
 D trains are not running between Bay Parkway and Coney Island-Stillwell Av in both directions.
 
 Some northbound D trains are running on the N line from Coney Island-Stillwell Av to 36 St (BKLYN).
 
 The last stop on southbound D trains will be Bay Parkway.",bklyn d and n trains stalled train,10:27:12,"d, n",
-26,NYC,PM,BKLYN,,2/10/2019,2/10/2019 6:41:19 PM,Northbound C trains are delayed while NYPD responds to reports of an injured train conductor at Van Siclen Av.,bklyn c train injured train conductor,6:41:19,c,
-13,NYC,PM,BKLYN,,2/20/2019,2/20/2019 5:34:32 PM,"B, D, N, and Q trains are running with residual delays in both directions because of multiple trains having their brakes activated in Brooklyn. 
+26,NYC,PM,BKLYN,injured train conductor,2/10/2019,2/10/2019 6:41:19 PM,Northbound C trains are delayed while NYPD responds to reports of an injured train conductor at Van Siclen Av.,bklyn c train injured train conductor,6:41:19,c,
+13,NYC,PM,BKLYN,brake activation,2/20/2019,2/20/2019 5:34:32 PM,"B, D, N, and Q trains are running with residual delays in both directions because of multiple trains having their brakes activated in Brooklyn. 
 
 Service is also delayed because of winter storm conditions.",bklyn b d n and q trains delays,5:34:32,"b, d, n, q",
-47,NYC,AM,BKLYN,,2/25/2019,2/25/2019 8:46:00 AM,"Southbound Q trains are running express from Kings Hwy to Sheepshead Bay Rd because strong winds are causing a pole to swing in the path of trains at Neck Rd. 
+!,NYC,AM,BKLYN,strong winds are causing a pole to swing in the path of trains,2/25/2019,2/25/2019 8:46:00 AM,"Southbound Q trains are running express from Kings Hwy to Sheepshead Bay Rd because strong winds are causing a pole to swing in the path of trains at Neck Rd. 
 
 We are working to secure the pole ASAP.
 
 Expect delays in B and Q train service.",bklyn b and q trains swinging pole,8:46:00,"b, q",
-49,NYC,AM,BKLYN,,2/26/2019,2/26/2019 7:54:21 AM,Northbound B and Q trains are delayed because a train's brakes were automatically activated at Prospect Park. Our crews are investigating.,bklyn b and q trains brakes in emergency,7:54:21,"b, q",
-37,NYC,AM,BKLYN,,2/8/2019,2/8/2019 2:47:13 AM,"Some 207 St-bound A trains are stopping along the F line from Jay St-MetroTech to West 4 St-Washington Square while maintenance crews replace rails at High St. 
+49,NYC,AM,BKLYN,brake activation,2/26/2019,2/26/2019 7:54:21 AM,Northbound B and Q trains are delayed because a train's brakes were automatically activated at Prospect Park. Our crews are investigating.,bklyn b and q trains brakes in emergency,7:54:21,"b, q",
+37,NYC,AM,BKLYN,rail replacement,2/8/2019,2/8/2019 2:47:13 AM,"Some 207 St-bound A trains are stopping along the F line from Jay St-MetroTech to West 4 St-Washington Square while maintenance crews replace rails at High St. 
 For bypassed stations, take a Far Rockaway-bound A train.",bklyn a trains rail replacement,2:47:13,a,
-26,NYC,AM,BKLYN,,2/6/2019,2/6/2019 3:03:07 AM,Manhattan-bound A trains are delayed while our crews replace rails at Hoyt-Schermerhorn.,bklyn a trains rail replacement,3:03:07,a,
-42,NYC,PM,BKLYN,,2/16/2019,2/16/2019 4:34:45 PM,Southbound A trains are delayed while NYPD responds to an unauthorized person on the tracks at Rockaway Blvd.,bklyn a train unathorized person on tracks,4:34:45,a,
-33,NYC,AM,BKLYN,,2/21/2019,2/21/2019 8:46:22 AM,Northbound A and C trains are running with delays because someone was riding on top of a train car near Clinton Washington Avs.,bklyn a and c trains person riding on top of train,8:46:22,"a, c",
-39,NYC,AM,BKLYN,,2/10/2019,2/10/2019 1:58:51 AM,2 trains are delayed in both directions while we remove a train with vandalism from service at Flatbush Av-Brooklyn College.,bklyn 2 trains vandalism,1:58:51,2,
-42,NYC,AM,BKLYN,,2/14/2019,2/14/2019 4:14:15 AM,Flatbush Av-bound 2 trains will arrive on the Manhattan-bound track at Beverly Rd and Newkirk Av while crews replace rails at Flatbush Av-Brooklyn College.,bklyn 2 trains rail replacement,4:14:15,2,
-38,NYC,AM,BKLYN,,2/14/2019,2/14/2019 2:39:16 AM,Bronx-bound 2 trains are delayed while crews replace rails at President St.,bklyn 2 trains rail replacement,2:39:16,2,
-21,NYC,PM,BKLYN,,2/24/2019,2/24/2019 2:53:47 PM,2 3 and 4 trains are running with delays in Brooklyn after a temporary loss of third-rail power between President St and Atlantic Av-Barclays Ctr.,bklyn 2 3 and 4 trains temporary power loss,2:53:47,"2, 3, 4",
-23,NYC,PM,,,2/13/2019,2/13/2019 3:49:54 PM,"Presidents' Day
+26,NYC,AM,BKLYN,rail replacement,2/6/2019,2/6/2019 3:03:07 AM,Manhattan-bound A trains are delayed while our crews replace rails at Hoyt-Schermerhorn.,bklyn a trains rail replacement,3:03:07,a,
+42,NYC,PM,BKLYN,unauthorized person,2/16/2019,2/16/2019 4:34:45 PM,Southbound A trains are delayed while NYPD responds to an unauthorized person on the tracks at Rockaway Blvd.,bklyn a train unathorized person on tracks,4:34:45,a,
+33,NYC,AM,BKLYN,surfing,2/21/2019,2/21/2019 8:46:22 AM,Northbound A and C trains are running with delays because someone was riding on top of a train car near Clinton Washington Avs.,bklyn a and c trains person riding on top of train,8:46:22,"a, c",
+39,NYC,AM,BKLYN,vandalized trains,2/10/2019,2/10/2019 1:58:51 AM,2 trains are delayed in both directions while we remove a train with vandalism from service at Flatbush Av-Brooklyn College.,bklyn 2 trains vandalism,1:58:51,2,
+42,NYC,AM,BKLYN,rail replacement,2/14/2019,2/14/2019 4:14:15 AM,Flatbush Av-bound 2 trains will arrive on the Manhattan-bound track at Beverly Rd and Newkirk Av while crews replace rails at Flatbush Av-Brooklyn College.,bklyn 2 trains rail replacement,4:14:15,2,
+38,NYC,AM,BKLYN,rail replacement,2/14/2019,2/14/2019 2:39:16 AM,Bronx-bound 2 trains are delayed while crews replace rails at President St.,bklyn 2 trains rail replacement,2:39:16,2,
+21,NYC,PM,BKLYN,loss of power,2/24/2019,2/24/2019 2:53:47 PM,2 3 and 4 trains are running with delays in Brooklyn after a temporary loss of third-rail power between President St and Atlantic Av-Barclays Ctr.,bklyn 2 3 and 4 trains temporary power loss,2:53:47,"2, 3, 4",
+23,NYC,PM,,holiday schedule,2/13/2019,2/13/2019 3:49:54 PM,"Presidents' Day
 Subways operate on a Saturday schedule.
  5 service will run between Bowling Green and Dyre Av.
  5 and D service will run local in the Bronx

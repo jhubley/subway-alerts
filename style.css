@@ -1,8 +1,13 @@
+html {
+  height: 100vh;
+  overscroll-behavior: none;
+}
 body{
   font-family: Arial,sans-serif;
   margin:0;
   overflow-x: scroll;
   overflow-y:hidden;
+  overscroll-behavior: none;
   height: 100vh;
 }
 body::-webkit-scrollbar {
@@ -97,8 +102,10 @@ path.connector-dot{
   left:500px;
   position: absolute;
   top:60%;
+  width:525px;
 }
 .dialogbox-3{
+  width:525px;
   left:2000px;
   position: absolute;
   top:60%;

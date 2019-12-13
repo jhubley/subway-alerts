@@ -1,7 +1,5 @@
 $(document).ready(function() {
   $('html, body, *').mousewheel(function(e, delta) {
-    // this prevents the dip down even though it throws an error...
-    // e.preventDefault();
     this.scrollLeft -= (delta);
   });
 });
@@ -45,12 +43,12 @@ data = d3.csv('data/jan_sept_oct_nov.csv')
   console.log('data',data)
   notime = csv.filter(function(d){return d.time == ''})
   console.log('no time',notime)
-  const rowLength = 380,
+  const rowLength = 500,
   size = 25,
   marginLeft = 0,
   marginRight = 0,
   marginTop = 50,
-  width=2510,
+  width=rowLength*size,
   height=window.innerHeight/2
 
   const scale = d3.scaleLinear()
