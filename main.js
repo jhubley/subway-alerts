@@ -6,30 +6,57 @@ $(document).ready(function() {
 
 window.addEventListener("scroll", function (event) {
     var scroll = this.scrollX;
-    console.log(scroll)
+    // console.log(scroll)
+    d3.select('.dialogbox-2')
+    .style('top','100%')
 
-    if(scroll>=300 && scroll <= 999){
+    if(scroll>=400 && scroll <= 999){
       $('.dialogbox-1').removeClass('show')
       $('.dialogbox-1').addClass('hide')
-      $('.dialogbox-2').removeClass('hide')
-      $('.dialogbox-2').addClass('show')
+      // $('.dialogbox-2').removeClass('hide')
+      // $('.dialogbox-2').addClass('show')
+      d3.select('.dialogbox-2')
+      .style('top','100%')
+      .transition()
+      .duration(250)
+      .ease(d3.easeLinear)
+      .style('top','60%')
+      .style('left','750px')
+
+      d3.selectAll('.circle').attr('opacity',function(d){
+        if(d.cause == "raccoon"){return 1}
+        else{return .2}
+      })
     }
     else if(scroll >=1000){
-      $('.dialogbox-2').removeClass('show')
-      $('.dialogbox-2').addClass('hide')
+      // $('.dialogbox-2').removeClass('show')
+      // $('.dialogbox-2').addClass('hide')
       $('.dialogbox-3').removeClass('hide')
       $('.dialogbox-3').addClass('show')
+
+      d3.selectAll('.circle').attr('opacity',1)
     }
     else if(scroll <=499){
       $('.dialogbox-1').removeClass('hide')
       $('.dialogbox-1').addClass('show')
-      $('.dialogbox-2').removeClass('show')
-      $('.dialogbox-2').addClass('hide')
+      // $('.dialogbox-2').removeClass('show')
+      // $('.dialogbox-2').addClass('hide')
+
+      d3.selectAll('.circle').attr('opacity',1)
     }
 });
 
 data = d3.csv('data/jan_sept_oct_nov.csv')
   .then((csv) => {
+
+    // d3.select('#dialog')
+    // .append('div')
+    // .attr('class','dialog-4')
+    // .style('position','absolute')
+    // .style('top','60%')
+    // .style('left','500px')
+    // .style('width','300px')
+    // .text('Hello!')
 
   csv.forEach(function(d){
     alltrains = d.train.split(',')
@@ -39,10 +66,10 @@ data = d3.csv('data/jan_sept_oct_nov.csv')
     d.minutes = hoursminutes[1]
   })
   data = csv.filter(function(d){return d.trainone != '' && d.time != ''})
-  console.log('data length',data.length)
-  console.log('data',data)
+  // console.log('data length',data.length)
+  // console.log('data',data)
   notime = csv.filter(function(d){return d.time == ''})
-  console.log('no time',notime)
+  // console.log('no time',notime)
   const rowLength = 500,
   size = 25,
   marginLeft = 0,
@@ -160,11 +187,11 @@ data = d3.csv('data/jan_sept_oct_nov.csv')
 
     d3.select('#cause_filter')
     .on("change", function () {
-      console.log('changed')
+      // console.log('changed')
       d3.selectAll('rect').attr('opacity',1)
       d3.selectAll('circle').attr('opacity',1)
       selectedCause = $(this).children(':selected').text();
-      console.log('selectedCause',selectedCause)
+      // console.log('selectedCause',selectedCause)
       d3.selectAll('rect').attr('opacity',function(d){
         if(d.cause == selectedCause ){return 1}
         else{return 0.1}
