@@ -46,8 +46,21 @@ window.addEventListener("scroll", function (event) {
     }
 });
 
-data = d3.csv('data/jan_sept_oct_nov.csv')
+data = d3.csv('data/jan_feb_aug_sept_oct_nov.csv')
   .then((csv) => {
+
+// X jan
+// X feb
+//mar
+//apr
+//may
+//june
+//july
+// X aug
+// X sept
+// X oct
+// X nov
+//dec
 
     // d3.select('#dialog')
     // .append('div')
@@ -57,6 +70,7 @@ data = d3.csv('data/jan_sept_oct_nov.csv')
     // .style('left','500px')
     // .style('width','300px')
     // .text('Hello!')
+var parseTime = d3.timeParse("%m/%d/%Y %I:%M:%S %p");
 
   csv.forEach(function(d){
     alltrains = d.train.split(',')
@@ -64,23 +78,31 @@ data = d3.csv('data/jan_sept_oct_nov.csv')
     hoursminutes = d.time.split(':')
     d.hours = hoursminutes[0]
     d.minutes = hoursminutes[1]
+    d.fulldateparsed = parseTime(d.fulldate);
   })
-  data = csv.filter(function(d){return d.trainone != '' && d.time != ''})
-  // console.log('data length',data.length)
-  // console.log('data',data)
-  notime = csv.filter(function(d){return d.time == ''})
-  // console.log('no time',notime)
-  const rowLength = 500,
+  console.log('csv',csv)
+  function sortByDateAscending(a, b) {
+      return a.fulldateparsed - b.fulldateparsed;
+  }
+  sortedCSV = csv.sort(sortByDateAscending);
+  console.log('sortedCSV',sortedCSV)
+  data = sortedCSV.filter(function(d){return d.trainone != '' && d.time != ''})
+  console.log('data length',data.length)
+  console.log('data',data)
+  nodate = sortedCSV.filter(function(d){return d.fulldateparsed == null})
+  console.log('null date',nodate)
+  const colLength = 10,
   size = 25,
   marginLeft = 0,
   marginRight = 0,
   marginTop = 50,
+  rowLength = data.length / colLength,
   width=rowLength*size,
   height=window.innerHeight/2
 
   const scale = d3.scaleLinear()
-    .domain([0, rowLength])
-    .range([0, size * rowLength])
+    .domain([0, colLength])
+    .range([0, size * colLength])
 
   const viz = d3.select("#delays")
   	.append("svg")
@@ -112,11 +134,11 @@ data = d3.csv('data/jan_sept_oct_nov.csv')
   const circle = slot
     .append('circle')
     .attr('cx', (d, i) => {
-      const n = i % rowLength
+      const n = Math.floor(i / colLength)
       return scale(n) + size/2
     })
     .attr('cy', (d, i) => {
-      const n = Math.floor(i / rowLength)
+      const n = i % colLength
       return scale(n) + size/2
     })
     .attr('r', size/2)
@@ -134,11 +156,11 @@ data = d3.csv('data/jan_sept_oct_nov.csv')
       .attr('fill','#fff')
       .attr('font-size',12)
       .attr('dx', (d, i) => {
-        const n = i % rowLength
+        const n = Math.floor(i / colLength)
         return scale(n) + (size/2) - 3.5
       })
       .attr('dy', (d, i) => {
-        const n = Math.floor(i / rowLength)
+        const n = i % colLength
         return scale(n) + (size/2) + 4
       })
       .attr('cursor','default')

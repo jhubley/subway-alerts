@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="timeline"></div>
+      <div id="delays"></div>
+    </div>
+  <script>
+  data = d3.csv('data/jan_sept_oct_nov.csv')
+    .then((data) => {
+
+      // data = [{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"},{"train":"A","message":"hello"}]
+
+      console.log('data',data)
+
+    const colLength = 10,
+    size = 25,
+    marginLeft = 0,
+    marginRight = 0,
+    marginTop = 50,
+    rowLength = data.length / colLength,
+    width=rowLength*size,
+    height=window.innerHeight/2
+
+    const scale = d3.scaleLinear()
+      .domain([0, colLength])
+      .range([0, size * colLength])
+
+    const viz = d3.select("#delays")
+      .append("svg")
+      .attr("id","grid")
+      .attr("width",width+marginLeft+marginRight)
+      .attr("height",height+marginTop)
+
+    const grid = viz.append('g').attr('transform','translate('+marginLeft+','+marginTop+')')
+
+    const slot = grid.selectAll('.square')
+      .data(data)
+      .enter().append("g")
+      .attr('class','slot')
+
+    const circle = slot
+      .append('circle')
+      .attr('cx', (d, i) => {
+        const n = Math.floor(i / colLength)
+        return scale(n) + size/2
+      })
+      .attr('cy', (d, i) => {
+        const n = i % colLength
+        return scale(n) + size/2
+      })
+      .attr('r', size/2)
+      .attr('fill', '#333')
+      .attr('class','circle')
+      .attr('opacity',1)
+      .attr('stroke','#fff')
+      .attr('stroke-width',1)
+
+      slot
+        .append('text')
+        .attr('fill','#fff')
+        .attr('font-size',12)
+        .attr('dx', (d, i) => {
+          const n = Math.floor(i / colLength)
+          return scale(n) + (size/2) - 3.5
+        })
+        .attr('dy', (d, i) => {
+          const n = i % colLength
+          return scale(n) + (size/2) + 4
+        })
+        .attr('cursor','default')
+        .text(function(d,i){return i})
+
+})
+  </script>
+  </body>
+</html>
