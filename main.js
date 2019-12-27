@@ -6,70 +6,16 @@ $(document).ready(function() {
 
 window.addEventListener("scroll", function (event) {
     var scroll = this.scrollX;
-    // console.log(scroll)
-    d3.select('.dialogbox-2')
-    .style('top','100%')
 
-    if(scroll>=400 && scroll <= 999){
-      $('.dialogbox-1').removeClass('show')
-      $('.dialogbox-1').addClass('hide')
-      // $('.dialogbox-2').removeClass('hide')
-      // $('.dialogbox-2').addClass('show')
-      d3.select('.dialogbox-2')
-      .style('top','100%')
-      .transition()
-      .duration(250)
-      .ease(d3.easeLinear)
-      .style('top','60%')
-      .style('left','750px')
+    // if(scroll>=400 && scroll <= 999){
+    //   $('.dialogbox-1').removeClass('show')
+    //   $('.dialogbox-1').addClass('hide')
 
-      d3.selectAll('.circle').attr('opacity',function(d){
-        if(d.cause == "raccoon"){return 1}
-        else{return .2}
-      })
-    }
-    else if(scroll >=1000){
-      // $('.dialogbox-2').removeClass('show')
-      // $('.dialogbox-2').addClass('hide')
-      $('.dialogbox-3').removeClass('hide')
-      $('.dialogbox-3').addClass('show')
-
-      d3.selectAll('.circle').attr('opacity',1)
-    }
-    else if(scroll <=499){
-      $('.dialogbox-1').removeClass('hide')
-      $('.dialogbox-1').addClass('show')
-      // $('.dialogbox-2').removeClass('show')
-      // $('.dialogbox-2').addClass('hide')
-
-      d3.selectAll('.circle').attr('opacity',1)
-    }
 });
 
-data = d3.csv('data/jan_feb_aug_sept_oct_nov.csv')
+data = d3.csv('data/fullyear_throughdec25.csv')
   .then((csv) => {
 
-// X jan
-// X feb
-//mar
-//apr
-//may
-//june
-//july
-// X aug
-// X sept
-// X oct
-// X nov
-//dec
-
-    // d3.select('#dialog')
-    // .append('div')
-    // .attr('class','dialog-4')
-    // .style('position','absolute')
-    // .style('top','60%')
-    // .style('left','500px')
-    // .style('width','300px')
-    // .text('Hello!')
 var parseTime = d3.timeParse("%m/%d/%Y %I:%M:%S %p");
 
   csv.forEach(function(d){
@@ -91,15 +37,15 @@ var parseTime = d3.timeParse("%m/%d/%Y %I:%M:%S %p");
   console.log('data',data)
   nodate = sortedCSV.filter(function(d){return d.fulldateparsed == null})
   console.log('null date',nodate)
-  const colLength = 10,
+  const height=window.innerHeight/2,
+  colLength = (height/27).toFixed(0),
   size = 25,
   marginLeft = 0,
   marginRight = 0,
   marginTop = 50,
   rowLength = data.length / colLength,
-  width=rowLength*size,
-  height=window.innerHeight/2
-
+  width=rowLength*size
+  console.log('colLength',colLength)
   const scale = d3.scaleLinear()
     .domain([0, colLength])
     .range([0, size * colLength])
@@ -111,18 +57,7 @@ var parseTime = d3.timeParse("%m/%d/%Y %I:%M:%S %p");
   	.attr("height",height+marginTop)
 
   const trains = ['A','B','C','D','E','F','G','J','L','M','N','Q','R','S','W','Z','1','2','3','4','5','6','7']
-  // const oldcolors = ['blue','orange','blue','orange','blue','orange','limegreen','brown','gray','brown','yellow','yellow','yellow','lightgray','yellow','brown','red','red','red','green','green','green','purple']
   const colors = ['#006bf5','#ff6f30','#006bf5','#ff6f30','#006bf5','#ff6f30','#90d050','#994646','#808080','#994646','#ffcc51','#ffcc51','#ffcc51','#bbb','#ffcc51','#994646','#ff252a','#ff252a','#ff252a','#368826','#368826','#368826','#581b7c','#000']
-  //blue #006bf5
-  //orange #ff6f30
-  //lime green #90d050
-  //brown #994646
-  //gray #808080
-  //yellow #ffcc51
-  //lightgray #bbb
-  //green #368826
-  //purple #581b7c
-  //red #ff252a
 
   const grid = viz.append('g').attr('transform','translate('+marginLeft+','+marginTop+')')
 
@@ -172,9 +107,9 @@ var parseTime = d3.timeParse("%m/%d/%Y %I:%M:%S %p");
         d3.select(this).attr('opacity',1)
         let tooltip_str = ''
         if(d.minutes.length == 1){
-          tooltip_str = d.date + ', ' + d.hours + ':0' + d.minutes + d.ampm + '<br/>' + d.train + ' train<br/>' + d.cause + '<br/>' + d.message
+          tooltip_str = d.date + ', ' + d.hours + ':0' + d.minutes + d.ampm + '<br/>' + d.train + ' train<br/>' + d.message
         }else{
-          tooltip_str = d.date + ', ' + d.hours + ':' + d.minutes + d.ampm + '<br/>' + d.train + ' train<br/>' + d.cause + '<br/>' + d.message
+          tooltip_str = d.date + ', ' + d.hours + ':' + d.minutes + d.ampm + '<br/>' + d.train + ' train<br/>' + d.message
         }
         tooltip.html(tooltip_str)
           .style("visibility", "visible");
@@ -213,11 +148,8 @@ var parseTime = d3.timeParse("%m/%d/%Y %I:%M:%S %p");
       d3.selectAll('rect').attr('opacity',1)
       d3.selectAll('circle').attr('opacity',1)
       selectedCause = $(this).children(':selected').text();
-      // console.log('selectedCause',selectedCause)
-      d3.selectAll('rect').attr('opacity',function(d){
-        if(d.cause == selectedCause ){return 1}
-        else{return 0.1}
-      })
+      console.log('selectedCause',selectedCause)
+
       d3.selectAll('circle').attr('opacity',function(d){
         if(d.cause == selectedCause ){return 1}
         else{return 0.1}

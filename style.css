@@ -21,6 +21,10 @@ body::-webkit-scrollbar-thumb {
   background-color: #ffcc51;
   outline: 1px solid slategrey;
 }
+a{
+  color: #ff0000;
+  text-decoration: none;
+}
 #container{
   height: 100vh;
   width: 2500px;
@@ -51,21 +55,21 @@ h1{
   position: fixed;
   width: 100%;
   border-top:1px solid #ccc;
-  top:365px;
+  top:51.5%;
   left:0;
 }
 #months{
   position: absolute;
-  width:2500px;
+  width:13000px;
   left:0;
-  top:350px;
+  top:50%;
   padding: 5px 10px;
 }
 #months li{
   display: inline;
   list-style-type: none;
   list-style-image: none;
-  padding-right:720px;
+  padding-right:1000px;
 }
 .tooltip {
   position: absolute;
@@ -87,28 +91,43 @@ path.connector{
 path.connector-dot{
   fill:#fff;
 }
-#dialog{
-  margin:0px 40px;
-  font-size: 18px;
+#section-wrapper{
+  position: absolute;
+  bottom: 0;
+  overflow-x: inherit;
 }
-#dialog span{
+#sections{
+  margin:5% 40px 0;
+  font-size: 18px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x:inherit;
+}
+#sections span{
   background: #000;
   color: #fff;
+  font-size: 22px;
 }
-.dialogbox-1{
-  width:525px;
+#sections p{
+  color: #333;
+  font-family: Times;
+  font-size: 22px;
 }
-.dialogbox-2{
-  left:750px;
-  position: absolute;
-  top:100%;
-  width:525px;
+.step{
+  flex: 0 0 auto;
+  /* opacity: .1; */
+  padding:0 600px 0 0;
+  max-width: 400px;
 }
-.dialogbox-3{
-  width:525px;
-  left:2000px;
-  position: absolute;
-  top:60%;
+.step:last-of-type{
+  flex: 0 0 auto;
+  /* opacity: .1; */
+  padding:0 !important;
+  max-width: 400px;
+}
+.step.dialogbox-1{
+  opacity: 1 !important;
+  max-width: 700px !important;
 }
 .show{
   visibility: visible;
